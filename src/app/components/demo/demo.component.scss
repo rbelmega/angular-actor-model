@@ -1,0 +1,58 @@
+.example-component {
+  float: left;
+  width: 300px;
+  background: white;
+  height: 210px;
+  border: 1px solid #cccccc;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px #cccccc;
+  position: relative;
+}
+
+h3 {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 25px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.33);
+}
+
+.example-component.loading {
+  background: rgba(255, 255, 0, 0.56);
+}
+
+.example-component.loaded {
+  background: white;
+}
+
+.example-component.error {
+  background: rgba(255, 0, 0, 0.51);
+}
+
+button {
+  font-size: 18px;
+}
+
+.no-way {
+  position: fixed;
+  right: 0;
+  bottom: -190px;
+}
+
+.no-way-animate {
+  animation: noway 1.5s ease-in;
+}
+
+@keyframes noway {
+  0% {
+    bottom: -190px;
+  }
+  50% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -190px;
+  }
+}
